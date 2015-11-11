@@ -40,7 +40,7 @@ function course_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'display_summary' => 1,
-      'text_processing' => 1,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1057,6 +1057,12 @@ function course_field_default_field_instances() {
         'type' => 'og_list_default',
         'weight' => 0,
       ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'user',
     'field_name' => 'og_user_node',
@@ -1111,6 +1117,12 @@ function course_field_default_field_instances() {
         'settings' => array(),
         'type' => 'og_list_default',
         'weight' => 10,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'user',
