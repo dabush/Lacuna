@@ -30,6 +30,10 @@ Drupal.behaviors.mobileSupport = {
 
   }
 };
-
+Drupal.behaviors.myModuleAccordions = {
+  attach: function(context, settings) {
+    $('.accordion').accordion({collapsible: true, active: "none", heightStyle: "content"});
+  }
+};
 
 })(jQuery, Drupal, this, this.document);
