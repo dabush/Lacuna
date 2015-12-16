@@ -393,3 +393,23 @@ body {
     width: auto;
     font-family: "Source Sans Pro", sans-serif;
 }
+
+/*styling for accordion pages*/
+.ui-accordion-content, .ui-accordion-header {
+  text-align: justify;
+  font-family: "Baskerville Libre", Georgia, "Times New Roman", "Dejavu Serif", serif;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.ui-accordion-header {
+  color: rgb(21, 136, 186);
+}
+
+.ui-state-default {
+  background: none !important;
+}
+
+.ui-state-hover {
+  background: #ececec;
+}
