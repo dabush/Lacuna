@@ -296,8 +296,8 @@ body {
     .field-name-field-course-image img {
         width: 100%;
         height: auto;
-        transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
+        /*transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);*/
     }
     .field-name-field-course-title {
         font-family: "Source Sans Pro", serif;
@@ -332,7 +332,7 @@ body {
       margin-right: 5%;
       text-align: justify;
     }
-
+@media (min-width: 930px) {
     .group-left {
       width: 58%;
     }
@@ -343,6 +343,20 @@ body {
       border: 1px solid #d1d5d3;
       margin-top: 40px;
     }
+  }
+  @media (max-width: 930px) {
+    .group-left {
+      width: 100%;
+      float: left;
+    }
+
+    .group-right {
+      width: 100%;
+      float: left;
+      box-shadow: inset 0 0 3px 0 rgba(0,0,0,0.15);
+      border: 1px solid #d1d5d3;
+    }
+  }
     .field-name-field-course-term {
       margin-left: 10%;
       margin-right: 20%;
@@ -385,6 +399,7 @@ body {
         }
     }
 }
+
 
 /*styling for "enroll" button on course pages*/
 .enroll-button {
