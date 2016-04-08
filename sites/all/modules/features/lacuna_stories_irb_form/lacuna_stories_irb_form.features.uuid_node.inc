@@ -11,28 +11,28 @@ function lacuna_stories_irb_form_uuid_features_default_content() {
   $nodes = array();
 
   $nodes[] = array(
-  'uid' => 4,
+  'uid' => 1,
   'title' => 'Report a Bug',
   'log' => '',
   'status' => 1,
   'comment' => 1,
   'promote' => 1,
   'sticky' => 0,
-  'vuuid' => '9b87f5f7-6f92-4f9b-b4c8-7193148bf8b9',
+  'vuuid' => '9c5a67c9-66be-46cd-9d65-3b5a703ab657',
   'type' => 'webform',
   'language' => 'und',
-  'created' => 1449001948,
+  'created' => 1460142756,
   'tnid' => 0,
   'translate' => 0,
-  'uuid' => '766e5c55-ce12-4442-b34e-4e0647f8e652',
-  'revision_uid' => 4,
+  'uuid' => '6385ab88-d29f-457e-94cc-bf5e726cd4e5',
+  'revision_uid' => 1,
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => '<p>If you&#39;ve encountered a part of the site that isn&#39;t working like it seems it should, please let us know. Thanks for helping us make Lacuna Stories better.</p>',
+        'value' => 'If you\'ve encountered a part of the site that isn\'t working like it seems it should, please let us know. Thanks for helping us make Lacuna better.',
         'summary' => '',
         'format' => 'filtered_html',
-        'safe_value' => '<p>If you\'ve encountered a part of the site that isn\'t working like it seems it should, please let us know. Thanks for helping us make Lacuna Stories better.</p>
+        'safe_value' => '<p>If you\'ve encountered a part of the site that isn\'t working like it seems it should, please let us know. Thanks for helping us make Lacuna better.</p>
 ',
         'safe_summary' => '',
       ),
@@ -97,8 +97,8 @@ function lacuna_stories_irb_form_uuid_features_default_content() {
     'pathauto' => 1,
   ),
   'webform' => array(
-    'nid' => '766e5c55-ce12-4442-b34e-4e0647f8e652',
-    'confirmation' => '<p>Thanks for your report!</p>',
+    'nid' => '6385ab88-d29f-457e-94cc-bf5e726cd4e5',
+    'confirmation' => 'Thanks for helping us improve Lacuna!',
     'confirmation_format' => 'filtered_html',
     'redirect_url' => '<confirmation>',
     'status' => 1,
@@ -118,7 +118,7 @@ function lacuna_stories_irb_form_uuid_features_default_content() {
     ),
     'emails' => array(
       1 => array(
-        'nid' => 3394,
+        'nid' => 14,
         'eid' => 1,
         'email' => 'info@lacunastories.com',
         'subject' => 'default',
@@ -132,10 +132,10 @@ function lacuna_stories_irb_form_uuid_features_default_content() {
     ),
     'components' => array(
       1 => array(
-        'nid' => '766e5c55-ce12-4442-b34e-4e0647f8e652',
+        'nid' => '6385ab88-d29f-457e-94cc-bf5e726cd4e5',
         'cid' => 1,
         'pid' => 0,
-        'form_key' => 'your_e_mail_address',
+        'form_key' => 'your_email_address',
         'name' => 'Your E-mail Address',
         'type' => 'email',
         'value' => '%useremail',
@@ -151,20 +151,19 @@ function lacuna_stories_irb_form_uuid_features_default_content() {
           'conditional_component' => '',
           'conditional_values' => '',
         ),
-        'mandatory' => 0,
+        'mandatory' => 1,
         'weight' => 0,
         'page_num' => 1,
       ),
-      4 => array(
-        'nid' => '766e5c55-ce12-4442-b34e-4e0647f8e652',
-        'cid' => 4,
+      2 => array(
+        'nid' => '6385ab88-d29f-457e-94cc-bf5e726cd4e5',
+        'cid' => 2,
         'pid' => 0,
         'form_key' => 'description_of_the_problem',
         'name' => 'Description of the Problem',
         'type' => 'textarea',
         'value' => '',
         'extra' => array(
-          'description' => 'Please add a short description of the problem you\'ve encountered, where on the site you encountered it, and any steps you took that led to this error, so we can reproduce it.',
           'title_display' => 0,
           'private' => 0,
           'resizable' => 1,
@@ -172,6 +171,7 @@ function lacuna_stories_irb_form_uuid_features_default_content() {
           'conditional_operator' => '=',
           'cols' => '',
           'rows' => '',
+          'description' => '',
           'attributes' => array(),
           'conditional_component' => '',
           'conditional_values' => '',
@@ -180,23 +180,25 @@ function lacuna_stories_irb_form_uuid_features_default_content() {
         'weight' => 1,
         'page_num' => 1,
       ),
-      2 => array(
-        'nid' => '766e5c55-ce12-4442-b34e-4e0647f8e652',
-        'cid' => 2,
+      3 => array(
+        'nid' => '6385ab88-d29f-457e-94cc-bf5e726cd4e5',
+        'cid' => 3,
         'pid' => 0,
         'form_key' => 'browser_and_operating_system_information',
         'name' => 'Browser and Operating System Information',
-        'type' => 'textarea',
+        'type' => 'textfield',
         'value' => '',
         'extra' => array(
-          'description' => 'Please include your browser and operating system versions so that we can help pinpoint the problem.',
-          'title_display' => 0,
+          'description' => 'Please identify the browser and operating system you are using',
+          'title_display' => 'before',
           'private' => 0,
-          'resizable' => 1,
+          'width' => 150,
           'disabled' => 0,
+          'unique' => 0,
           'conditional_operator' => '=',
-          'cols' => '',
-          'rows' => '',
+          'maxlength' => '',
+          'field_prefix' => '',
+          'field_suffix' => '',
           'attributes' => array(),
           'conditional_component' => '',
           'conditional_values' => '',
@@ -205,22 +207,22 @@ function lacuna_stories_irb_form_uuid_features_default_content() {
         'weight' => 2,
         'page_num' => 1,
       ),
-      3 => array(
-        'nid' => '766e5c55-ce12-4442-b34e-4e0647f8e652',
-        'cid' => 3,
+      4 => array(
+        'nid' => '6385ab88-d29f-457e-94cc-bf5e726cd4e5',
+        'cid' => 4,
         'pid' => 0,
         'form_key' => 'screenshot',
         'name' => 'Screenshot',
         'type' => 'file',
         'value' => '',
         'extra' => array(
-          'description' => 'Please consider uploading a screenshot of the error.',
+          'description' => 'Please consider uploading a screenshot of the problem so that we can better identify it.',
           'scheme' => 'public',
           'title_display' => 'before',
           'private' => 0,
           'progress_indicator' => 'throbber',
           'filtering' => array(
-            'size' => '1 MB',
+            'size' => '2 MB',
             'types' => array(
               0 => 'gif',
               1 => 'jpg',
@@ -242,13 +244,13 @@ function lacuna_stories_irb_form_uuid_features_default_content() {
   ),
   'cid' => 0,
   'last_comment_name' => NULL,
-  'last_comment_uid' => 4,
+  'last_comment_uid' => 1,
   'comment_count' => 0,
-  'name' => 'dabush@stanford.edu',
-  'picture' => 101,
-  'data' => 'a:28:{s:7:"contact";i:1;s:19:"biblio_show_profile";i:0;s:19:"biblio_my_pubs_menu";i:0;s:21:"biblio_contributor_id";s:1:"0";s:22:"biblio_id_change_count";s:1:"0";s:17:"biblio_user_style";s:6:"system";s:18:"biblio_baseopenurl";s:0:"";s:18:"biblio_openurl_sid";s:0:"";s:19:"biblio_crossref_pid";s:0:"";s:14:"current-course";s:1:"5";s:27:"annotation_privacy_defaults";a:1:{i:3383;a:2:{s:8:"audience";a:4:{s:7:"private";i:0;s:10:"instructor";i:0;s:11:"peer-groups";i:0;s:8:"everyone";i:1;}s:6:"groups";a:1:{s:11:"peer_groups";a:0:{}}}}i:0;a:2:{s:8:"audience";a:4:{s:7:"private";i:0;s:10:"instructor";i:0;s:11:"peer-groups";i:0;s:8:"everyone";i:1;}s:6:"groups";a:1:{s:11:"peer_groups";a:0:{}}}i:1;a:2:{s:8:"audience";a:4:{s:7:"private";i:0;s:10:"instructor";i:0;s:11:"peer-groups";i:0;s:8:"everyone";i:1;}s:6:"groups";a:1:{s:11:"peer_groups";a:0:{}}}i:2;a:2:{s:8:"audience";a:4:{s:7:"private";i:0;s:10:"instructor";i:0;s:11:"peer-groups";i:0;s:8:"everyone";i:1;}s:6:"groups";a:1:{s:11:"peer_groups";a:0:{}}}i:3;a:2:{s:8:"audience";a:4:{s:7:"private";i:0;s:10:"instructor";i:0;s:11:"peer-groups";i:0;s:8:"everyone";i:1;}s:6:"groups";a:1:{s:11:"peer_groups";a:0:{}}}i:4;a:2:{s:8:"audience";a:4:{s:7:"private";i:0;s:10:"instructor";i:0;s:11:"peer-groups";i:0;s:8:"everyone";i:1;}s:6:"groups";a:1:{s:11:"peer_groups";a:0:{}}}i:5;a:2:{s:8:"audience";a:4:{s:7:"private";i:0;s:10:"instructor";i:0;s:11:"peer-groups";i:0;s:8:"everyone";i:1;}s:6:"groups";a:1:{s:11:"peer_groups";a:0:{}}}i:6;a:2:{s:8:"audience";a:4:{s:7:"private";i:0;s:10:"instructor";i:0;s:11:"peer-groups";i:0;s:8:"everyone";i:1;}s:6:"groups";a:1:{s:11:"peer_groups";a:0:{}}}i:7;a:2:{s:8:"audience";a:4:{s:7:"private";i:0;s:10:"instructor";i:0;s:11:"peer-groups";i:0;s:8:"everyone";i:0;}s:6:"groups";a:1:{s:11:"peer_groups";a:0:{}}}i:8;a:2:{s:8:"audience";a:4:{s:7:"private";i:0;s:10:"instructor";i:0;s:11:"peer-groups";i:0;s:8:"everyone";i:0;}s:6:"groups";a:1:{s:11:"peer_groups";a:0:{}}}i:9;a:2:{s:8:"audience";a:4:{s:7:"private";i:0;s:10:"instructor";i:0;s:11:"peer-groups";i:0;s:8:"everyone";i:1;}s:6:"groups";a:1:{s:11:"peer_groups";a:0:{}}}i:10;a:2:{s:8:"audience";a:4:{s:7:"private";i:0;s:10:"instructor";i:0;s:11:"peer-groups";i:0;s:8:"everyone";i:1;}s:6:"groups";a:1:{s:11:"peer_groups";a:0:{}}}i:11;a:2:{s:8:"audience";a:4:{s:7:"private";i:0;s:10:"instructor";i:0;s:11:"peer-groups";i:0;s:8:"everyone";i:1;}s:6:"groups";a:1:{s:11:"peer_groups";a:0:{}}}i:12;a:2:{s:8:"audience";a:4:{s:7:"private";i:0;s:10:"instructor";i:0;s:11:"peer-groups";i:0;s:8:"everyone";i:1;}s:6:"groups";a:1:{s:11:"peer_groups";a:0:{}}}i:13;a:2:{s:8:"audience";a:4:{s:7:"private";i:0;s:10:"instructor";i:0;s:11:"peer-groups";i:0;s:8:"everyone";i:1;}s:6:"groups";a:1:{s:11:"peer_groups";a:0:{}}}i:14;a:2:{s:8:"audience";a:4:{s:7:"private";i:0;s:10:"instructor";i:0;s:11:"peer-groups";i:0;s:8:"everyone";i:1;}s:6:"groups";a:1:{s:11:"peer_groups";a:0:{}}}i:15;a:2:{s:8:"audience";a:4:{s:7:"private";i:0;s:10:"instructor";i:0;s:11:"peer-groups";i:0;s:8:"everyone";i:1;}s:6:"groups";a:1:{s:11:"peer_groups";a:0:{}}}i:16;a:2:{s:8:"audience";a:4:{s:7:"private";i:0;s:10:"instructor";i:0;s:11:"peer-groups";i:0;s:8:"everyone";i:1;}s:6:"groups";a:1:{s:11:"peer_groups";a:0:{}}}}',
+  'name' => 'admin',
+  'picture' => 0,
+  'data' => 'a:3:{s:7:"contact";i:1;s:27:"annotation_privacy_defaults";a:1:{i:8;a:2:{s:8:"audience";a:4:{s:7:"private";i:0;s:10:"instructor";i:0;s:11:"peer-groups";i:0;s:8:"everyone";i:1;}s:6:"groups";a:1:{s:11:"peer_groups";a:0:{}}}}i:0;a:2:{s:8:"audience";a:4:{s:7:"private";i:0;s:10:"instructor";i:0;s:11:"peer-groups";i:0;s:8:"everyone";i:1;}s:6:"groups";a:1:{s:11:"peer_groups";a:0:{}}}}',
   'pathauto_perform_alias' => FALSE,
-  'date' => '2015-12-01 12:32:28 -0800',
+  'date' => '2016-04-08 12:12:36 -0700',
 );
   return $nodes;
 }
