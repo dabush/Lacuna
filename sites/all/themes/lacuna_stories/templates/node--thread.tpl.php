@@ -18,9 +18,12 @@
       <?php print render($title_suffix); ?>
 
       <?php if ($display_submitted): ?>
+      <div class = "thread-title">
+        <?php print drupal_get_title(); ?>
+      </div>
       <div class="submitted response-user-information">
         <?php print $user_picture; ?>
-        <div class="username-and-date">
+        <div class="thread-username-and-date">
           <?php print $name; ?>
           <br>
             <span class="date-month-day-year">

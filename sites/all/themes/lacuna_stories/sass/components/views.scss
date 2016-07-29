@@ -351,3 +351,36 @@ body.page-course-setup-add-materials {
     float: left;
   }
 }
+
+/*New theming for threads*/
+/*Setting new standard colors for Lacuna ~2016 --DB*/
+$lacunablue: #465F73;
+$lacunagreen: #506038;
+$lacunagreenhover: #BDD09E;
+$lacunabluehover: #8495A0;
+$lacunafont: "Source Sans Pro", sans-serif, arial;
+
+article.node-thread{
+  box-shadow: none !important;
+  border: none !important;
+  .thread-title {
+    font-family: $lacunafont;
+    font-size: 2em;
+    padding-bottom: 0.5em;
+    font-weight: 200;
+  }
+.thread-username-and-date {
+  line-height: 2em;
+  padding-bottom: 1em;
+  a.username {
+  font-family: $lacunafont;
+  font-size: 2em;
+  font-weight: bold;
+  }
+  span.date-month-day-year {
+    font-family: $lacunafont;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}
+}
