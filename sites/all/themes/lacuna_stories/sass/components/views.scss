@@ -74,6 +74,58 @@ div.view-stitchings {
   }
 }
 
+/*New theming for threads*/
+/*Setting new standard colors for Lacuna ~2016 --DB*/
+$lacunablue: #465F73;
+$lacunagreen: #506038;
+$lacunagreenhover: #BDD09E;
+$lacunabluehover: #8495A0;
+$lacunafont: "Source Sans Pro", sans-serif, arial;
+
+article.node-thread{
+  box-shadow: none !important;
+  border: none !important;
+  /*line up header with view below*/
+  header {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .thread-title {
+    font-family: $lacunafont;
+    font-size: 2em;
+    padding-bottom: 0.5em;
+    font-weight: 600;
+    color: #333333;
+  }
+.thread-username-and-date {
+  line-height: 2em;
+  padding-bottom: 1em;
+  a.username {
+  font-family: $lacunafont;
+  font-size: 2em;
+  font-weight: 200;
+  }
+  span.date-month-day-year {
+    font-family: $lacunafont;
+    font-size: 1.5em;
+    font-weight: 200;
+  }
+}
+  .field-name-thread-description {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 20px;
+    border-left: 1px solid #cccccc;
+  }
+  div.messages {
+    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAAEJSURBVEhLtZFNCsIwEIU9TW4q3kFwpwsvIbjzCtKuuiiVLlpwUUoX8Y2mpdOZ/sn0g0eSL+k80J33fvOo0jqqtI4qraNK66jSOlIYIGYK8Qf4zuV5fqQ1nPlMIVaCb1xRFC+sPoqie3B8phArwPuugHiC4PlMIRaCt64sy67gDbAs/7mwuqqqDnVd72n/lT3IjRUQ2LNIAagA+y9N01yw9AdMFhA485lCgDRNz9h3tEWUuQICjs8U4veI/tAH1g4qWlJAwPOZQgSwF0UtUwUE7vhMIXrgLIrmCgjc85lCDIBzSZJcsyw7xXF8o3O4GqU/jyKFAWLmUGwRVVpHldZRpXVUaR1V2sbvPsOW4idmpHfyAAAAAElFTkSuQmCC');
+    border: none !important;
+    background-color: $lacunablue;
+    font-family: "Source Sans Pro", sans-serif, arial;
+    color: #ffffff;
+    border-radius: 5px;
+  }
+}
 
 /* Center the "Select all" options */
 .vbo-fieldset-select-all {
@@ -205,8 +257,22 @@ table.views-table {
   text-align: left;
 }
 
-.view-sewing-kit,
-.view-stitchings {
+.view-sewing-kit {
+    thead {
+    tr {
+      font-family: "Source Sans Pro", sans-serif, arial;
+    }
+  }
+  tr.odd {
+    background-color: #f7f7f7;
+    border-bottom: none !important;
+  }
+  tr.even {
+    border-bottom: none !important;
+  }
+  td.active {
+    background-color: #ebebeb;
+  }
   th.views-field-category,
   th.views-field-text,
   th.views-field-quote,
@@ -216,6 +282,55 @@ table.views-table {
   th {
     width: 2%;
     max-width: 5%;
+  }
+  th.views-field-text,
+  th.views-field-quote {
+      width: 10% !important;
+      min-width: 100px;
+  }
+  th.views-field-views-bulk-operations,
+  th.views-field-nothing {
+    width: 1% !important;
+  }
+  td.views-field-category {
+    text-align: center;
+  }
+  .form-item-field-annotation-reference-target-id .form-select {
+    width: 50%;
+}
+}
+.view-stitchings {
+  thead {
+    tr {
+      font-family: "Source Sans Pro", sans-serif, arial;
+    }
+  }
+  tr.odd {
+    background-color: #f7f7f7;
+    border-bottom: none !important;
+  }
+  tr.even {
+    border-bottom: none !important;
+  }
+  td.active {
+    background-color: #ebebeb;
+  }
+  th.views-field-category,
+  th.views-field-text,
+  th.views-field-quote,
+  th.view-field-tags {
+    text-align: center;
+  }
+  /* removing this to set custom widths
+  th {
+    width: 2%;
+    max-width: 5%;
+  }*/
+  th.views-field-name, th.views-field-field-annotation-reference, th.views-field-field-annotation-category, th.views-field-field-annotation-tags {
+    width: 10%;
+  }
+  th.views-field-field-annotation-quote, th.views-field-field-annotation-text {
+    width: 30%;
   }
   th.views-field-text,
   th.views-field-quote {
@@ -352,35 +467,4 @@ body.page-course-setup-add-materials {
   }
 }
 
-/*New theming for threads*/
-/*Setting new standard colors for Lacuna ~2016 --DB*/
-$lacunablue: #465F73;
-$lacunagreen: #506038;
-$lacunagreenhover: #BDD09E;
-$lacunabluehover: #8495A0;
-$lacunafont: "Source Sans Pro", sans-serif, arial;
 
-article.node-thread{
-  box-shadow: none !important;
-  border: none !important;
-  .thread-title {
-    font-family: $lacunafont;
-    font-size: 2em;
-    padding-bottom: 0.5em;
-    font-weight: 200;
-  }
-.thread-username-and-date {
-  line-height: 2em;
-  padding-bottom: 1em;
-  a.username {
-  font-family: $lacunafont;
-  font-size: 2em;
-  font-weight: bold;
-  }
-  span.date-month-day-year {
-    font-family: $lacunafont;
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-}
-}

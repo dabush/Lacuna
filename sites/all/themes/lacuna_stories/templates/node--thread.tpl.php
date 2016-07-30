@@ -48,11 +48,19 @@
     hide($content['comments']);
     hide($content['links']);
     print render($content['thread_description']);
+    //this allows us to move the VBO button down below the view
+    function lacuna_stories_form_alter(&$form, $form_state, $form_id) {
+  if (strpos($form_id,  'vbo_block') !== FALSE) {
+      $form['output']['#weight'] = -99; //Decrease the weight of output to rise it above other elements.
+        }
+      }
+
     global $user;
     // Hard-coded view title; bad, I know, but other option
     // is to load the entire view, then get the title, which
     // causes a PHP warning about passing non-variables by references
-    print '<h2 id="stitchings">Stitchings</h2>';
+    // removing this for now, since users already know they're viewing a thread -- DB
+    // print '<h2 id="stitchings">Stitchings</h2>';
     if ($user->uid === $node->uid) {
       // Allow node author to edit the stitchings
       print views_embed_view('stitchings', 'vbo_block', $node->nid);
