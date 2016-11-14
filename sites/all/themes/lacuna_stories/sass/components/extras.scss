@@ -413,6 +413,7 @@ span.group.manager {
     margin-left: 30px;
 }
 
+body.node-type-course {
 a.group.subscribe,
 a.group.unsubscribe,
 body.not-logged-in div.field-name-group-group {
@@ -420,6 +421,9 @@ body.not-logged-in div.field-name-group-group {
   font-size: 1.5em;
   width: auto;
 }
+}
+
+
 
 .toboggan-unified #login-message {
   font-family: "Source Sans Pro", sans-serif;
