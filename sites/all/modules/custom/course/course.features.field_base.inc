@@ -391,7 +391,7 @@ function course_field_default_field_bases() {
     'no_ui' => TRUE,
     'settings' => array(
       'allowed_values' => array(
-        0 => 'Open: Students can find it and join. I will authenticate their access.',
+        0 => 'Open: Students can find it and apply to join',
         1 => 'Closed: Not visible to students. I will edit it later to make it visible.',
       ),
       'allowed_values_function' => '',

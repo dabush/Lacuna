@@ -289,10 +289,10 @@ function course_strongarm() {
   $strongarm->name = 'locale_custom_strings_en';
   $strongarm->value = array(
     '' => array(
-      'Request group membership' => 'Enroll in this course',
-      'Subscribe to group' => 'Enroll in this course',
-      'Unsubscribe from group' => 'Unenroll from this course',
-      'You are the group manager' => 'You are enrolled in this course',
+      'Request group membership' => 'Enroll',
+      'Subscribe to group' => 'Enroll',
+      'Unsubscribe from group' => 'Unenroll',
+      'You are the group manager' => 'You are enrolled',
     ),
   );
   $export['locale_custom_strings_en'] = $strongarm;
