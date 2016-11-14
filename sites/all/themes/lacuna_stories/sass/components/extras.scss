@@ -398,9 +398,14 @@ div.node-course.view-mode-full {
     }
 }
 
-/*styling for "enroll" button on course pages*/
+/*styling for "enroll" button on course pages and peer groups pages*/
+body.node-type-peer-group {
+  span.group.manager {
+    font-size: 2em;
+  }
+
+
 .enroll-button {
-    margin-left: 3%;
     font-size: 1em;
     width: auto;
     font-family: "Source Sans Pro", sans-serif;
@@ -409,8 +414,6 @@ div.node-course.view-mode-full {
 span.group.manager {
     font-family: "Source Sans Pro", sans-serif;
     color: #1588ba;
-    font-size: 1.5em;
-    margin-left: 30px;
 }
 
 body.node-type-course {
@@ -421,9 +424,17 @@ body.not-logged-in div.field-name-group-group {
   font-size: 1.5em;
   width: auto;
 }
+span.group.manager {
+    margin-left: 30px;
+    font-size: 1.5em;
+}
 }
 
 
+
+
+
+/*login page styles*/
 
 .toboggan-unified #login-message {
   font-family: "Source Sans Pro", sans-serif;
@@ -443,5 +454,4 @@ body.not-logged-in div.field-name-group-group {
 body.not-logged-in div.field-name-group-group a {
   color: #ffffff;
   padding: 5px;
-}
-
+}}
