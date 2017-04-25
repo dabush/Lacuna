@@ -306,14 +306,16 @@ body {
 }
 
 
-/*styling for "about this course" page*/
+/*styling for "about this course" page -- changes made in redesign, 3/24/2017 DMB*/
 div.node-course.view-mode-full {
     .group-header {
-        width: 100%;
-        height: 35vh;
+        width: 45%;
+        float: left;
+        height: 30vh;
         overflow: hidden;
-        border-bottom: 1px solid #d1d5d3;
     }
+
+    /*moving the image to a separate area in the upper right*/
 
     .field-name-field-course-image img {
         width: 100%;
@@ -323,7 +325,7 @@ div.node-course.view-mode-full {
     }
     .field-name-title {
         font-family: "Source Sans Pro", $arial;
-        font-size: 3em;
+        font-size: 4em;
         padding-top: 25px;
         padding-bottom: 10px;
         text-align: left;
@@ -340,7 +342,7 @@ div.node-course.view-mode-full {
       margin-left: 5%;
       margin-right: 5%;
       font-family: "Source Sans Pro", sans-serif;
-      font-size: 2em;
+      font-size: 3em;
     }
 
     .field-name-field-department {
@@ -357,11 +359,21 @@ div.node-course.view-mode-full {
     }
 
     .group-left {
-      width: 58%;
+      width: 45%;
+      height: 30vh;
+      float: right;
+      border-bottom: 1px solid #d1d5d3;
+    }
+
+    .group-middle {
+      width: 45%;
+      float: left;
+      border-left: 1px solid #d1d5d3;
+      margin-top: 40px;
     }
 
     .group-right {
-      width: 40%;
+      width: 45%;
       box-shadow: inset 0 0 3px 0 rgba(0,0,0,0.15);
       border: 1px solid #d1d5d3;
       margin-top: 40px;
