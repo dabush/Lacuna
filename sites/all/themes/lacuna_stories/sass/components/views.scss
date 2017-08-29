@@ -230,6 +230,15 @@ $views-link-hover-color: #1588BA;
 }
 
 .view-responses {
+  .view-header {
+    div.add-response-button {
+      font-size: 1em;
+      width: auto;
+      padding: 10px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
   .views-field-realname {
   a {
     color: #94b725; 
