@@ -50,46 +50,6 @@ function lacuna_stories_menus_menu_default_menu_links() {
     'weight' => -48,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_create:<nolink>.
-  $menu_links['main-menu_create:<nolink>'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => '<nolink>',
-    'router_path' => '<nolink>',
-    'link_title' => 'Create',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_create:<nolink>',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 1,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-  );
-  // Exported menu link: main-menu_explore:<nolink>.
-  $menu_links['main-menu_explore:<nolink>'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => '<nolink>',
-    'router_path' => '<nolink>',
-    'link_title' => 'Explore',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_explore:<nolink>',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 1,
-    'expanded' => 0,
-    'weight' => -50,
-    'customized' => 1,
-  );
   // Exported menu link: main-menu_help:<nolink>.
   $menu_links['main-menu_help:<nolink>'] = array(
     'menu_name' => 'main-menu',
@@ -110,26 +70,25 @@ function lacuna_stories_menus_menu_default_menu_links() {
     'weight' => -44,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_recent-interactions:recent-interactions.
-  $menu_links['main-menu_recent-interactions:recent-interactions'] = array(
+  // Exported menu link: main-menu_reading:materials.
+  $menu_links['main-menu_reading:materials'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'recent-interactions',
-    'router_path' => 'recent-interactions',
-    'link_title' => 'Recent Interactions',
+    'link_path' => 'materials',
+    'router_path' => 'materials',
+    'link_title' => 'Reading',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'main-menu_recent-interactions:recent-interactions',
+      'identifier' => 'main-menu_reading:materials',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -11,
+    'weight' => -50,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_reflect:<nolink>',
   );
   // Exported menu link: main-menu_reflect:<nolink>.
   $menu_links['main-menu_reflect:<nolink>'] = array(
@@ -149,6 +108,26 @@ function lacuna_stories_menus_menu_default_menu_links() {
     'has_children' => 1,
     'expanded' => 0,
     'weight' => -47,
+    'customized' => 1,
+  );
+  // Exported menu link: main-menu_writing:responses.
+  $menu_links['main-menu_writing:responses'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'responses',
+    'router_path' => 'responses',
+    'link_title' => 'Writing',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'main-menu_writing:responses',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
     'customized' => 1,
   );
   // Exported menu link: menu-institutional-menu_about:http://www.lacunastories.com.
@@ -237,14 +216,13 @@ function lacuna_stories_menus_menu_default_menu_links() {
   t('About');
   t('Account');
   t('Connect');
-  t('Create');
-  t('Explore');
   t('Help');
   t('Log In');
   t('Log Out');
-  t('Recent Interactions');
+  t('Reading');
   t('Reflect');
   t('Register');
+  t('Writing');
 
   return $menu_links;
 }
