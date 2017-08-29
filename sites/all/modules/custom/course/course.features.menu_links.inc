@@ -23,13 +23,12 @@ function course_menu_default_menu_links() {
       'identifier' => 'main-menu_about-this-course:about-course',
     ),
     'module' => 'menu',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
     'weight' => 0,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_explore:<nolink>',
   );
   // Exported menu link: main-menu_courses:<front>.
   $menu_links['main-menu_courses:<front>'] = array(
