@@ -20,13 +20,13 @@ function lacuna_stories_responses_menu_default_menu_links() {
       'identifier' => 'main-menu_my-writing:my-writing',
     ),
     'module' => 'system',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
     'weight' => -48,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_create:<nolink>',
+    'parent_identifier' => 'main-menu_writing:responses',
   );
   // Exported menu link: main-menu_responses:responses.
   $menu_links['main-menu_responses:responses'] = array(
@@ -38,13 +38,13 @@ function lacuna_stories_responses_menu_default_menu_links() {
       'identifier' => 'main-menu_responses:responses',
     ),
     'module' => 'system',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
     'weight' => -49,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_explore:<nolink>',
+    'parent_identifier' => 'main-menu_reading:materials',
   );
   // Exported menu link: main-menu_write-a-response:node/add/response.
   $menu_links['main-menu_write-a-response:node/add/response'] = array(
@@ -59,13 +59,13 @@ function lacuna_stories_responses_menu_default_menu_links() {
       'identifier' => 'main-menu_write-a-response:node/add/response',
     ),
     'module' => 'menu',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
     'weight' => -49,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_create:<nolink>',
+    'parent_identifier' => 'main-menu_writing:responses',
   );
 
   // Translatables
