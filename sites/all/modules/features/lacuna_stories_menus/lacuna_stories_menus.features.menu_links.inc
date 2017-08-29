@@ -70,17 +70,17 @@ function lacuna_stories_menus_menu_default_menu_links() {
     'weight' => -44,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_reading:materials.
-  $menu_links['main-menu_reading:materials'] = array(
+  // Exported menu link: main-menu_readings:materials.
+  $menu_links['main-menu_readings:materials'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'materials',
     'router_path' => 'materials',
-    'link_title' => 'Reading',
+    'link_title' => 'Readings',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'main-menu_reading:materials',
+      'identifier' => 'main-menu_readings:materials',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -219,7 +219,7 @@ function lacuna_stories_menus_menu_default_menu_links() {
   t('Help');
   t('Log In');
   t('Log Out');
-  t('Reading');
+  t('Readings');
   t('Reflect');
   t('Register');
   t('Writing');
