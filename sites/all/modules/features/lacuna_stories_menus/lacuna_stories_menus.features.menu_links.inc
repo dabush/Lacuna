@@ -30,26 +30,6 @@ function lacuna_stories_menus_menu_default_menu_links() {
     'weight' => -46,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_connect:<nolink>.
-  $menu_links['main-menu_connect:<nolink>'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => '<nolink>',
-    'router_path' => '<nolink>',
-    'link_title' => 'Connect',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_connect:<nolink>',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 1,
-    'expanded' => 0,
-    'weight' => -48,
-    'customized' => 1,
-  );
   // Exported menu link: main-menu_help:<nolink>.
   $menu_links['main-menu_help:<nolink>'] = array(
     'menu_name' => 'main-menu',
@@ -68,6 +48,26 @@ function lacuna_stories_menus_menu_default_menu_links() {
     'has_children' => 1,
     'expanded' => 0,
     'weight' => -44,
+    'customized' => 1,
+  );
+  // Exported menu link: main-menu_organize:<nolink>.
+  $menu_links['main-menu_organize:<nolink>'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => '<nolink>',
+    'router_path' => '<nolink>',
+    'link_title' => 'Organize',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'main-menu_organize:<nolink>',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 0,
+    'weight' => -48,
     'customized' => 1,
   );
   // Exported menu link: main-menu_readings:materials.
@@ -90,17 +90,17 @@ function lacuna_stories_menus_menu_default_menu_links() {
     'weight' => -50,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_reflect:<nolink>.
-  $menu_links['main-menu_reflect:<nolink>'] = array(
+  // Exported menu link: main-menu_social:<nolink>.
+  $menu_links['main-menu_social:<nolink>'] = array(
     'menu_name' => 'main-menu',
     'link_path' => '<nolink>',
     'router_path' => '<nolink>',
-    'link_title' => 'Reflect',
+    'link_title' => 'Social',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'main-menu_reflect:<nolink>',
+      'identifier' => 'main-menu_social:<nolink>',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -215,13 +215,13 @@ function lacuna_stories_menus_menu_default_menu_links() {
   // Included for use with string extractors like potx.
   t('About');
   t('Account');
-  t('Connect');
   t('Help');
   t('Log In');
   t('Log Out');
+  t('Organize');
   t('Readings');
-  t('Reflect');
   t('Register');
+  t('Social');
   t('Writing');
 
   return $menu_links;
