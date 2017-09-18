@@ -27,7 +27,7 @@ function lacuna_stories_menus_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -44,
     'customized' => 1,
   );
   // Exported menu link: main-menu_help:<nolink>.
@@ -43,11 +43,11 @@ function lacuna_stories_menus_menu_default_menu_links() {
       'identifier' => 'main-menu_help:<nolink>',
     ),
     'module' => 'menu',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 0,
-    'has_children' => 1,
+    'has_children' => 0,
     'expanded' => 0,
-    'weight' => -44,
+    'weight' => -43,
     'customized' => 1,
   );
   // Exported menu link: main-menu_organize:<nolink>.
@@ -67,7 +67,7 @@ function lacuna_stories_menus_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -47,
     'customized' => 1,
   );
   // Exported menu link: main-menu_readings:materials.
@@ -87,7 +87,7 @@ function lacuna_stories_menus_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => -49,
     'customized' => 1,
   );
   // Exported menu link: main-menu_social:<nolink>.
@@ -107,7 +107,7 @@ function lacuna_stories_menus_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -46,
     'customized' => 1,
   );
   // Exported menu link: main-menu_writing:responses.
@@ -127,7 +127,7 @@ function lacuna_stories_menus_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -49,
+    'weight' => -48,
     'customized' => 1,
   );
   // Exported menu link: menu-institutional-menu_about:http://www.lacunastories.com.
