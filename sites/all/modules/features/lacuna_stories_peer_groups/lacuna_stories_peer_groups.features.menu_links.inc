@@ -29,7 +29,6 @@ function lacuna_stories_peer_groups_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -47,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_connect:<nolink>',
   );
 
   // Translatables

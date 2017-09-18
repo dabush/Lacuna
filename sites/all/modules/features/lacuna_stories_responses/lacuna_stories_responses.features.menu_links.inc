@@ -44,7 +44,7 @@ function lacuna_stories_responses_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -49,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_reading:materials',
+    'parent_identifier' => 'main-menu_readings:materials',
   );
   // Exported menu link: main-menu_write-a-response:node/add/response.
   $menu_links['main-menu_write-a-response:node/add/response'] = array(

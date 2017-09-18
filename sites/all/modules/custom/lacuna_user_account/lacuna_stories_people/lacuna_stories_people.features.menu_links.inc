@@ -66,9 +66,9 @@ function lacuna_stories_people_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => -49,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_connect:<nolink>',
+    'parent_identifier' => 'main-menu_social:<nolink>',
   );
 
   // Translatables
