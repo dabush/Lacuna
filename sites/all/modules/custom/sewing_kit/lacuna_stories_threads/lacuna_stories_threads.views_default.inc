@@ -22,7 +22,7 @@ function lacuna_stories_threads_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Sewing Kit';
+  $handler->display->display_options['title'] = 'Annotations';
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
@@ -450,7 +450,7 @@ if (module_exists(\'course\')) {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'sewing-kit';
+  $handler->display->display_options['path'] = 'annotations';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Sewing Kit';
   $handler->display->display_options['menu']['weight'] = '0';
