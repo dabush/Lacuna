@@ -360,3 +360,29 @@ div.lacuna-lti-landing-page {
     margin-bottom: 5px;
   }
 }
+
+/*Styles for the renovated Sewing Kit (now called Annotations) 9-18-2017, DMB*/
+body.page-annotations {
+  h1#page-title {
+    font-family: $lacuna-header-font;
+    text-transform: uppercase;
+    letter-spacing: -.01em;
+    font-weight: 400;
+    font-size: 2em;
+    color: #1588ba;
+  }
+}
+
+div.view-sewing-kit {
+  div.view-filters {
+    column-count: 2;
+    width: 82%;
+    float: left;
+    div#edit-field-annotation-category-tid-wrapper {
+      padding-top: 27px; //moves it down to line up vertically with other filters
+    }
+    input#edit-reset {
+      margin-top: 0;
+    }
+  }
+}

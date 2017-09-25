@@ -116,12 +116,18 @@ div.view-stitchings {
   }
 }
 
-/* Centers the Add to Thread & Remove From Thread buttons*/
-.vbo-views-form .container-inline.form-wrapper {
-  .fieldset-wrapper {
-    text-align: center;
+/* Aligns the Add to Thread & Remove From Thread buttons*/
+div.view-sewing-kit {
+  fieldset.container-inline {
+    width:100%;
+    padding-left: 0;
+    margin-left: 0;
+    .fieldset-wrapper {
+      text-align: left;
+    }
   }
 }
+
 
 
 /* Center the "Select all" options */
