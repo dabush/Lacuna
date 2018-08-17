@@ -13,6 +13,55 @@ function lacuna_stories_materials_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'tour_on_document';
+  $context->description = 'A walkthrough for Lacuna\'s reading features';
+  $context->tag = '';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'document/*' => 'document/*',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'joyride_add' => array(
+      'joyride_auto_start' => 1,
+      'joyride_play_once' => 0,
+      'joyride_tour_content' => '<li data-button="Next">
+  <h2>Welcome to Your Lacuna Course!</h2>
+  <p>To get a tour of Lacuna\'s features for reading, click Next.</em></p>
+</li><li data-id="page-title" data-text="Next" class="custom">
+  <h2>The Page Turner</h2>
+  <p>By default, each reading is displayed one \'page\' at a time. If your reading is long enough, it will show a page turner. You can \'flip\' through pages on your desktop/laptop computer by pressing the arrow keys on your keyboard or by clicking the arrows.</p>
+</li>
+<li data-id="annotation-filters-wrapper" data-text="Next" class="custom">
+  <h2>Annotations Filter</h2>
+  <p>Here, you can filter the annotations you see on the reading.</p>
+</li>
+<li data-id="menu-256-1" data-text="Next" class="custom">
+  <h2>Student Writing</h2>
+  <p>To write a post or response of your own, hover over the <em>Create</em> tab, then click <em>Write a Response.</em></p>
+</li>
+<li data-id="menu-255-1" data-text="Next" class="custom">
+  <h2>Peer Groups</h2>
+  <p>In addition to sharing annotations with everyone and with your instructor, you can share them with a peer group: a sub-group within a course organized by users like you or by the instructor. To create and view peer groups, hover over the Connect tab, then click on Peer Groups.</p>
+</li>
+<li data-id="menu-250-1" data-button="Close" class="custom">
+  <h2>Annotations Dashboard</h2>
+  <p>Finally, you can get a bird\'s-eye view of all of the annotations made in your course by hovering over the Reflect tab and clicking on Annotations Dashboard</p>
+</li>',
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('A walkthrough for Lacuna\'s reading features');
+  $export['tour_on_document'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'tour_on_enrollment';
   $context->description = '';
   $context->tag = '';

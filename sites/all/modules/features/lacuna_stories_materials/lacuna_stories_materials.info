@@ -27,6 +27,7 @@ dependencies[] = views_php
 dependencies[] = workflow
 dependencies[] = workflow_access
 dependencies[] = workflowfield
+features[context][] = tour_on_document
 features[context][] = tour_on_enrollment
 features[ctools][] = context:context:3
 features[ctools][] = field_group:field_group:1
